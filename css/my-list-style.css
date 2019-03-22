@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+:root{
+    --last-img-height:85vh;
+}
+
 .flex-container-column {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,7 +288,7 @@ div.fixed-img {
 }
 
 #img-5 {
-    height: 800px;
+    height: var(--last-img-height);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5)), to(rgba(51, 51, 51, 0.5))), url('../images/pooh-bye.jpg');
     background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
     background-image: -o-linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url('../images/pooh-bye.jpg');
@@ -337,7 +341,7 @@ img.profile-in-thanks:hover {
 
 footer div.copyright {
     background-color: black;
-    height: calc(100vh - 800px);
+    height: calc(100vh - var(--last-img-height));
     color: gray;
     font-size: 15px;
     font-family: Helvetica, serif;
